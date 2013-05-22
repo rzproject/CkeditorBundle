@@ -1,0 +1,28 @@
+{
+    "name": "rz/ckeditor-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 Bundle",
+    "keywords": ["symfony2", "RZProject"],
+    "homepage": "https://github.com/rzproject/CkeditorBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mell zamora",
+            "email": "mell@rzproject.org",
+            "homepage": "http://www.rzproject.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "rmzamora/jquery-bundle": "1.9.*@dev"
+    },
+    "autoload": {
+        "psr-0": { "Rz\\CkeditorBundle": "" }
+    },
+    "target-dir": "Rz/CkeditorBundle",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.2.x-dev"
+        }
+    }
+}

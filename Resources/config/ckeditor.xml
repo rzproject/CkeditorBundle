@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="rz_ckeditor.ckeditor.type.class">Rz\CkeditorBundle\Form\Type\CKEditorType</parameter>
+        <parameter key="rz_ckeditor.config_manager.class">Rz\CkeditorBundle\Model\ConfigManager</parameter>
+    </parameters>
+
+    <services>
+        <service id="rz_ckeditor.ckeditor.type" class="%rz_ckeditor.ckeditor.type.class%">
+            <argument type="service" id="rz_ckeditor.config_manager" />
+            <tag name="form.type"  alias="rz_ckeditor"/>
+        </service>
+
+        <service id="rz_ckeditor.config_manager" class="%rz_ckeditor.config_manager.class%" />
+
+        <!--<service id="rmzamora_form_extension.twig.trim_asset_version_extension"-->
+        <!--class="%rmzamora_formextension.twig.form_extension.class%"-->
+        <!--public="false">-->
+        <!--<tag name="twig.extension" />-->
+        <!--</service>-->
+    </services>
+</container>
