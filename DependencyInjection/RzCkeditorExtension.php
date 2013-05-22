@@ -59,7 +59,7 @@ class RzCkeditorExtension extends Extension
      *
      * @throws \Rz\Exception\DependencyInjectionException
      * @throws \Rz\Exception\DependencyInjectionException
-     * @return array                                                                The CKEditor configuration with merged toolbars.
+     * @return array                                      The CKEditor configuration with merged toolbars.
      */
     protected function mergeCkeditorToolbars(array $config)
     {

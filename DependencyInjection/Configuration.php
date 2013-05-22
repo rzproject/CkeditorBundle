@@ -21,6 +21,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('rz_ckeditor');
         $this->configureCkeditor($rootNode);
+
         return $treeBuilder;
     }
 
