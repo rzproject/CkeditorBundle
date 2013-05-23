@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="rz_ckeditor.twig.ckeditor_extension.class">Rz\CkeditorBundle\Twig\CkeditorExtension</parameter>
+    </parameters>
+
+    <services>
+        <service id="rz_ckeditor.twig.ckeditor_extension" class="%rz_ckeditor.twig.ckeditor_extension.class%">
+            <argument type="service" id="rz_ckeditor.config_manager" />
+            <tag name="twig.extension" />
+        </service>
+    </services>
+</container>

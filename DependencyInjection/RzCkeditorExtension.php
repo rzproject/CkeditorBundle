@@ -35,6 +35,7 @@ class RzCkeditorExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('ckeditor.xml');
+        $loader->load('twig.xml');
         $this->registerCkeditor($config, $container);
     }
     /**
