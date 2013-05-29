@@ -53,6 +53,8 @@ class RzCkeditorExtension extends Extension
         if (!empty($config['configs'])) {
             $config = $this->mergeCkeditorToolbars($config);
             $definition = $container->getDefinition('rz_ckeditor.config_manager');
+
+
             foreach ($config['configs'] as $name => $configuration) {
                 $definition->addMethodCall('setConfig', array($name, $configuration));
             }
