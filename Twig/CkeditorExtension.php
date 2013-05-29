@@ -42,10 +42,9 @@ class CkeditorExtension extends \Twig_Extension
      *
      * @return int
      */
-    public function getCKEditorConfig($configIndex = null, $toolbarType = 'inline_editor')
+    public function getCKEditorConfig($toolbarType = 'inline_editor', $configIndex = null)
     {
         $config = $this->configManager->getConfig($toolbarType);
-
         if ($configIndex) {
             if (!array_key_exists($configIndex, $config)) {
                 throw ConfigManagerException::configDoesNotExist($configIndex);
@@ -54,8 +53,6 @@ class CkeditorExtension extends \Twig_Extension
         } else {
             return $config;
         }
-
-
     }
 
     /**
