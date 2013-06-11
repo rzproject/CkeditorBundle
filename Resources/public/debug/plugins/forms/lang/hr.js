@@ -4,7 +4,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'forms', 'hr', {
 	button: {
-		title: 'Button svojstva',
+		title: 'Image Button svojstva',
 		text: 'Tekst (vrijednost)',
 		type: 'Vrsta',
 		typeBtn: 'Gumb',
@@ -60,9 +60,9 @@ CKEDITOR.plugins.setLang( 'forms', 'hr', {
 		type: 'Vrsta',
 		typeText: 'Tekst',
 		typePass: 'Šifra',
-		typeEmail: 'Email',
-		typeSearch: 'Traži',
-		typeTel: 'Broj telefona',
+		typeEmail: 'Email', // MISSING
+		typeSearch: 'Search', // MISSING
+		typeTel: 'Telephone Number', // MISSING
 		typeUrl: 'URL'
 	}
 });

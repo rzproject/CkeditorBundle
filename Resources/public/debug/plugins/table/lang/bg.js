@@ -50,13 +50,13 @@ CKEDITOR.plugins.setLang( 'table', 'bg', {
 	headersColumn: 'Първа колона',
 	headersNone: 'Няма',
 	headersRow: 'Първи ред',
-	invalidBorder: 'Размерът на рамката трябва да е число.',
-	invalidCellPadding: 'Отстоянието на клетките трябва да е позитивно число.',
-	invalidCellSpacing: 'Интервала в клетките трябва да е позитивно число.',
+	invalidBorder: 'Border size must be a number.', // MISSING
+	invalidCellPadding: 'Cell padding must be a positive number.', // MISSING
+	invalidCellSpacing: 'Cell spacing must be a positive number.', // MISSING
 	invalidCols: 'Броят колони трябва да е по-голям от 0.',
-	invalidHeight: 'Височината на таблицата трябва да е число.',
+	invalidHeight: 'Table height must be a number.', // MISSING
 	invalidRows: 'Броят редове трябва да е по-голям от 0.',
-	invalidWidth: 'Ширината на таблицата трябва да е число.',
+	invalidWidth: 'Table width must be a number.', // MISSING
 	menu: 'Настройки на таблицата',
 	row: {
 		menu: 'Ред',

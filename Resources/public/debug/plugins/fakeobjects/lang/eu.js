@@ -6,6 +6,6 @@ CKEDITOR.plugins.setLang( 'fakeobjects', 'eu', {
 	anchor: 'Aingura',
 	flash: 'Flash Animazioa',
 	hiddenfield: 'Ezkutuko Eremua',
-	iframe: 'IFrame',
+	iframe: 'IFrame', // MISSING
 	unknown: 'Objektu ezezaguna'
 });

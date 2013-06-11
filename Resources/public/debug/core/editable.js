@@ -432,11 +432,7 @@
 
 				// Setup editor keystroke handlers on this element.
 				var keystrokeHandler = editor.keystrokeHandler;
-
-				// If editor is read-only, then make sure that BACKSPACE key
-				// is blocked to prevent browser history navigation.
-				keystrokeHandler.blockedKeystrokes[ 8 ] = +editor.readOnly;
-
+				keystrokeHandler.blockedKeystrokes[ 8 ] = editor.readOnly;
 				editor.keystrokeHandler.attach( this );
 
 				// Update focus states.
@@ -1009,9 +1005,9 @@
 			// DATA PROCESSING
 
 			// Select range and stop execution.
-			// If data has been totally emptied after the filtering,
-			// any insertion is pointless (#10339).
-			if ( data && processDataForInsertion( that, data ) ) {
+			if ( data ) {
+				processDataForInsertion( that, data );
+
 				// DATA INSERTION
 				insertDataIntoRange( that );
 			}
@@ -1153,8 +1149,6 @@
 			}
 
 			that.dataWrapper = wrapper;
-
-			return data;
 		}
 
 		function insertDataIntoRange( that ) {
@@ -1619,9 +1613,7 @@
 				element = element.getParent();
 			}
 
-			// Don't use String.replace because it fails in IE7 if special replacement
-			// characters ($$, $&, etc.) are in data (#10367).
-			return wrapper.getOuterHtml().split( '{cke-peak}' ).join( data );
+			return wrapper.getOuterHtml().replace( '{cke-peak}', data );
 		}
 
 		return insert;

@@ -60,7 +60,7 @@ CKEDITOR.plugins.setLang( 'table', 'sv', {
 	menu: 'Tabellegenskaper',
 	row: {
 		menu: 'Rad',
-		insertBefore: 'Lägg till rad före',
+		insertBefore: 'Lägg till Rad Före',
 		insertAfter: 'Lägg till rad efter',
 		deleteRow: 'Radera rad'
 	},

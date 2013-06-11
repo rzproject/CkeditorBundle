@@ -27,30 +27,30 @@ CKEDITOR.lang[ 'ru' ] = {
 	dir: 'ltr',
 
 	// ARIA description.
-	editor: 'Визуальный текстовый редактор',
+	editor: 'Визуальный редактор текста',
 
 	// Common messages and labels.
 	common: {
 		// Screenreader titles. Please note that screenreaders are not always capable
 		// of reading non-English words. So be careful while translating it.
-		editorHelp: 'Нажмите ALT-0 для открытия справки',
+		editorHelp: 'нажмите ALT-0 для открытия справки',
 
 		browseServer: 'Выбор на сервере',
 		url: 'Ссылка',
 		protocol: 'Протокол',
-		upload: 'Загрузка файла',
+		upload: 'Загрузка',
 		uploadSubmit: 'Загрузить на сервер',
 		image: 'Изображение',
 		flash: 'Flash',
 		form: 'Форма',
-		checkbox: 'Чекбокс',
-		radio: 'Радиокнопка',
+		checkbox: 'Флаговая кнопка',
+		radio: 'Кнопка выбора',
 		textField: 'Текстовое поле',
 		textarea: 'Многострочное текстовое поле',
 		hiddenField: 'Скрытое поле',
 		button: 'Кнопка',
 		select: 'Список выбора',
-		imageButton: 'Кнопка-изображение',
+		imageButton: 'Изображение-кнопка',
 		notSet: '<не указано>',
 		id: 'Идентификатор',
 		name: 'Имя',
@@ -81,7 +81,7 @@ CKEDITOR.lang[ 'ru' ] = {
 		langDirLTR: 'Слева направо (LTR)',
 		langDirRTL: 'Справа налево (RTL)',
 		styles: 'Стиль',
-		cssClasses: 'CSS классы',
+		cssClasses: 'Классы CSS',
 		width: 'Ширина',
 		height: 'Высота',
 		align: 'Выравнивание',

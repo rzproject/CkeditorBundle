@@ -5,6 +5,7 @@
 
 CKEDITOR.dialog.add( 'paste', function( editor ) {
 	var lang = editor.lang.clipboard;
+	var isCustomDomain = CKEDITOR.env.isCustomDomain();
 
 	function onPasteFrameLoad( win ) {
 		var doc = new CKEDITOR.dom.document( win.document ),
@@ -129,12 +130,12 @@ CKEDITOR.dialog.add( 'paste', function( editor ) {
 					var src =
 							CKEDITOR.env.air ?
 								'javascript:void(0)' :
-							CKEDITOR.env.ie ?
-								'javascript:void((function(){' + encodeURIComponent(
+							isCustomDomain ?
+								'javascript:void((function(){' +
 									'document.open();' +
-									'(' + CKEDITOR.tools.fixDomain + ')();' +
-									'document.close();'
-								) + '})())"'
+									'document.domain=\'' + document.domain + '\';' +
+									'document.close();' +
+								'})())"'
 							: '';
 
 					var iframe = CKEDITOR.dom.element.createFromHtml( '<iframe' +
@@ -171,12 +172,8 @@ CKEDITOR.dialog.add( 'paste', function( editor ) {
 					if ( CKEDITOR.env.ie ) {
 						var focusGrabber = CKEDITOR.dom.element.createFromHtml( '<span tabindex="-1" style="position:absolute" role="presentation"></span>' );
 						focusGrabber.on( 'focus', function() {
-							// Since fixDomain is called in src attribute,
-							// IE needs some slight delay to correctly move focus.
-							setTimeout( function() {
-								iframe.$.contentWindow.focus();
-							} );
-						} );
+							iframe.$.contentWindow.focus();
+						});
 						container.append( focusGrabber );
 
 						// Override focus handler on field.

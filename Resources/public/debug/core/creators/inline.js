@@ -7,15 +7,15 @@
 	/** @class CKEDITOR */
 
 	/**
-	 * Turns a DOM element with `contenteditable` attribute set to `true` into a
-	 * CKEditor instance. Check {@link CKEDITOR.dtd#$editable} for the list of
+	 * Turn a DOM element with `contenteditable` attribute set to `true` into a
+	 * CKEditor instance, check {@link CKEDITOR.dtd#$editable} for the list of
 	 * allowed element names.
 	 *
-	 *		<div contenteditable="true" id="content">...</div>
+	 *		<div contenteditable="true" id="content"></textarea>
 	 *		...
 	 *		CKEDITOR.inline( 'content' );
 	 *
-	 * @param {Object/String} element The DOM element or its ID.
+	 * @param {Object/String} element The DOM element (`<textarea>`), its ID or name.
 	 * @param {Object} [instanceConfig] The specific configurations to apply to this editor instance.
 	 * See {@link CKEDITOR.config}.
 	 * @returns {CKEDITOR.editor} The editor instance created.

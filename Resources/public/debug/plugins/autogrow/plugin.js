@@ -38,12 +38,12 @@
 	// @returns {Number} New height if has been changed, or the passed `lastHeight`.
 	var resizeEditor = function( editor, lastHeight ) {
 		if ( !editor.window )
-			return null;
+			return;
 
 		var maximize = editor.getCommand( 'maximize' );
 			// Disable autogrow when the editor is maximized .(#6339)
 		if( maximize && maximize.state == CKEDITOR.TRISTATE_ON )
-			return null;
+			return;
 
 		var scrollable = getScrollable( editor ),
 			currentHeight = editor.window.getViewPaneSize().height,

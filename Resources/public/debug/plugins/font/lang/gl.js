@@ -5,10 +5,10 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 CKEDITOR.plugins.setLang( 'font', 'gl', {
 	fontSize: {
 		label: 'Tamaño',
-		voiceLabel: 'Tamaño da letra',
-		panelTitle: 'Tamaño da letra'
+		voiceLabel: 'Font Size',
+		panelTitle: 'Tamaño'
 	},
-	label: 'Tipo de letra',
-	panelTitle: 'Nome do tipo de letra',
-	voiceLabel: 'Tipo de letra'
+	label: 'Tipo',
+	panelTitle: 'Tipo',
+	voiceLabel: 'Tipo'
 });

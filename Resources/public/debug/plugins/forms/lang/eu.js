@@ -60,9 +60,9 @@ CKEDITOR.plugins.setLang( 'forms', 'eu', {
 		type: 'Mota',
 		typeText: 'Testua',
 		typePass: 'Pasahitza',
-		typeEmail: 'E-posta',
-		typeSearch: 'Bilatu',
-		typeTel: 'Telefono Zenbakia',
+		typeEmail: 'Email', // MISSING
+		typeSearch: 'Search', // MISSING
+		typeTel: 'Telephone Number', // MISSING
 		typeUrl: 'URL'
 	}
 });

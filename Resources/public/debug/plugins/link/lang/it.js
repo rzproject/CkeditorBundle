@@ -3,7 +3,7 @@ Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'link', 'it', {
-	acccessKey: 'Scorciatoia da tastiera',
+	acccessKey: 'Scorciatoia<br />da tastiera',
 	advanced: 'Avanzate',
 	advisoryContentType: 'Tipo della risorsa collegata',
 	advisoryTitle: 'Titolo',
@@ -55,10 +55,10 @@ CKEDITOR.plugins.setLang( 'link', 'it', {
 	targetPopup: '<finestra popup>',
 	targetPopupName: 'Nome finestra popup',
 	title: 'Collegamento',
-	toAnchor: 'Ancora nel testo',
+	toAnchor: 'Ancora nella pagina',
 	toEmail: 'E-Mail',
 	toUrl: 'URL',
-	toolbar: 'Collegamento',
+	toolbar: 'Inserisci/Modifica collegamento',
 	type: 'Tipo di Collegamento',
 	unlink: 'Elimina collegamento',
 	upload: 'Carica'

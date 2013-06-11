@@ -3,7 +3,7 @@ Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'flash', 'bg', {
-	access: 'Достъп до скрипт',
+	access: 'Script Access', // MISSING
 	accessAlways: 'Винаги',
 	accessNever: 'Никога',
 	accessSameDomain: 'Същият домейн',
@@ -12,7 +12,7 @@ CKEDITOR.plugins.setLang( 'flash', 'bg', {
 	alignBaseline: 'Базова линия',
 	alignTextTop: 'Върху текста',
 	bgcolor: 'Цвят на фона',
-	chkFull: 'Включи на цял екран',
+	chkFull: 'Allow Fullscreen', // MISSING
 	chkLoop: 'Цикъл',
 	chkMenu: 'Разрешено Flash меню',
 	chkPlay: 'Авто. пускане',
@@ -33,9 +33,9 @@ CKEDITOR.plugins.setLang( 'flash', 'bg', {
 	scaleNoBorder: 'Без рамка',
 	title: 'Настройки за флаш',
 	vSpace: 'Вертикален отстъп',
-	validateHSpace: 'HSpace трябва да е число.',
+	validateHSpace: 'HSpace must be a number.', // MISSING
 	validateSrc: 'Уеб адреса не трябва да е празен.',
-	validateVSpace: 'VSpace трябва да е число.',
+	validateVSpace: 'VSpace must be a number.', // MISSING
 	windowMode: 'Режим на прозореца',
 	windowModeOpaque: 'Плътност',
 	windowModeTransparent: 'Прозрачност',

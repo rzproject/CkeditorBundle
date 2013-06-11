@@ -4,5 +4,5 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'maximize', 'eu', {
 	maximize: 'Maximizatu',
-	minimize: 'Minimizatu'
+	minimize: 'Minimize' // MISSING
 });

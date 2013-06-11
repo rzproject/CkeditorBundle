@@ -18,7 +18,7 @@ CKEDITOR.plugins.setLang( 'specialchar', 'hr', {
 	yen: 'Yen znak',
 	brvbar: 'Potrgana prečka',
 	sect: 'Znak odjeljka',
-	uml: 'Prijeglasi',
+	uml: 'Diaeresis', // MISSING
 	copy: 'Copyright znak',
 	ordf: 'Feminine ordinal indicator', // MISSING
 	laquo: 'Lijevi dvostruki uglati navodnik',
@@ -29,7 +29,7 @@ CKEDITOR.plugins.setLang( 'specialchar', 'hr', {
 	sup2: 'Superscript two', // MISSING
 	sup3: 'Superscript three', // MISSING
 	acute: 'Acute accent', // MISSING
-	micro: 'Mikro znak',
+	micro: 'Micro sign', // MISSING
 	para: 'Pilcrow sign', // MISSING
 	middot: 'Srednja točka',
 	cedil: 'Cedilla', // MISSING

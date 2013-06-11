@@ -3,7 +3,7 @@ Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'flash', 'th', {
-	access: 'การเข้าถึงสคริปต์',
+	access: 'Script Access', // MISSING
 	accessAlways: 'ตลอดไป',
 	accessNever: 'ไม่เลย',
 	accessSameDomain: 'โดเมนเดียวกัน',

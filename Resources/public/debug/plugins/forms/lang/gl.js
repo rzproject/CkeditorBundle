@@ -4,65 +4,65 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 CKEDITOR.plugins.setLang( 'forms', 'gl', {
 	button: {
-		title: 'Propiedades do botón',
+		title: 'Propriedades do Botón',
 		text: 'Texto (Valor)',
 		type: 'Tipo',
-		typeBtn: 'Botón',
-		typeSbm: 'Enviar',
-		typeRst: 'Restabelever'
+		typeBtn: 'Button',
+		typeSbm: 'Submit',
+		typeRst: 'Reset'
 	},
 	checkboxAndRadio: {
-		checkboxTitle: 'Propiedades da caixa de selección',
-		radioTitle: 'Propiedades do botón de opción',
+		checkboxTitle: 'Propriedades do Cadro de Verificación',
+		radioTitle: 'Propriedades do Botón de Radio',
 		value: 'Valor',
 		selected: 'Seleccionado'
 	},
 	form: {
-		title: 'Propiedades do formulario',
-		menu: 'Propiedades do formulario',
+		title: 'Propriedades do Formulario',
+		menu: 'Propriedades do Formulario',
 		action: 'Acción',
 		method: 'Método',
-		encoding: 'Codificación'
+		encoding: 'Encoding'
 	},
 	hidden: {
-		title: 'Propiedades do campo agochado',
+		title: 'Propriedades do Campo Oculto',
 		name: 'Nome',
 		value: 'Valor'
 	},
 	select: {
-		title: 'Propiedades do campo de selección',
-		selectInfo: 'Información',
-		opAvail: 'Opcións dispoñíbeis',
+		title: 'Propriedades do Campo de Selección',
+		selectInfo: 'Info',
+		opAvail: 'Opcións Disponibles',
 		value: 'Valor',
 		size: 'Tamaño',
 		lines: 'liñas',
-		chkMulti: 'Permitir múltiplas seleccións',
+		chkMulti: 'Permitir múltiples seleccións',
 		opText: 'Texto',
 		opValue: 'Valor',
 		btnAdd: 'Engadir',
 		btnModify: 'Modificar',
 		btnUp: 'Subir',
 		btnDown: 'Baixar',
-		btnSetValue: 'Estabelecer como valor seleccionado',
-		btnDelete: 'Eliminar'
+		btnSetValue: 'Definir como valor por defecto',
+		btnDelete: 'Borrar'
 	},
 	textarea: {
-		title: 'Propiedades da área de texto',
+		title: 'Propriedades da Área de Texto',
 		cols: 'Columnas',
 		rows: 'Filas'
 	},
 	textfield: {
-		title: 'Propiedades do campo de texto',
+		title: 'Propriedades do Campo de Texto',
 		name: 'Nome',
 		value: 'Valor',
-		charWidth: 'Largo do carácter',
-		maxChars: 'Núm. máximo de caracteres',
+		charWidth: 'Tamaño do Caracter',
+		maxChars: 'Máximo de Caracteres',
 		type: 'Tipo',
 		typeText: 'Texto',
-		typePass: 'Contrasinal',
-		typeEmail: 'Correo',
-		typeSearch: 'Buscar',
-		typeTel: 'Número de teléfono',
+		typePass: 'Chave',
+		typeEmail: 'Email', // MISSING
+		typeSearch: 'Search', // MISSING
+		typeTel: 'Telephone Number', // MISSING
 		typeUrl: 'URL'
 	}
 });

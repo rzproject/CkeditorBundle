@@ -28,13 +28,13 @@
 CKEDITOR.dom.range = function( root ) {
 	/**
 	 * Node within which the range begins.
+	 * One of {@link CKEDITOR#NODE_ELEMENT}, {@link CKEDITOR#NODE_TEXT}
 	 *
 	 *		var range = new CKEDITOR.dom.range( editor.document );
 	 *		range.selectNodeContents( editor.document.getBody() );
 	 *		alert( range.startContainer.getName() ); // 'body'
 	 *
-	 * @readonly
-	 * @property {CKEDITOR.dom.element/CKEDITOR.dom.text}
+	 * @property {Number}
 	 */
 	this.startContainer = null;
 
@@ -45,20 +45,19 @@ CKEDITOR.dom.range = function( root ) {
 	 *		range.selectNodeContents( editor.document.getBody() );
 	 *		alert( range.startOffset ); // 0
 	 *
-	 * @readonly
 	 * @property {Number}
 	 */
 	this.startOffset = null;
 
 	/**
 	 * Node within which the range ends.
+	 * One of {@link CKEDITOR#NODE_ELEMENT}, {@link CKEDITOR#NODE_TEXT}
 	 *
 	 *		var range = new CKEDITOR.dom.range( editor.document );
 	 *		range.selectNodeContents( editor.document.getBody() );
 	 *		alert( range.endContainer.getName() ); // 'body'
 	 *
-	 * @readonly
-	 * @property {CKEDITOR.dom.element/CKEDITOR.dom.text}
+	 * @property {Number}
 	 */
 	this.endContainer = null;
 
@@ -69,7 +68,6 @@ CKEDITOR.dom.range = function( root ) {
 	 *		range.selectNodeContents( editor.document.getBody() );
 	 *		alert( range.endOffset ); // == editor.document.getBody().getChildCount()
 	 *
-	 * @readonly
 	 * @property {Number}
 	 */
 	this.endOffset = null;
@@ -84,8 +82,6 @@ CKEDITOR.dom.range = function( root ) {
 	 *		alert( range.collapsed ); // false
 	 *		range.collapse();
 	 *		alert( range.collapsed ); // true
-	 *
-	 * @readonly
 	 */
 	this.collapsed = true;
 
@@ -96,7 +92,6 @@ CKEDITOR.dom.range = function( root ) {
 	 *		// Selects the body contents of the range document.
 	 *		range.selectNodeContents( range.document.getBody() );
 	 *
-	 * @readonly
 	 * @property {CKEDITOR.dom.document}
 	 */
 	this.document = isDocRoot ? root : root.getDocument();
@@ -104,7 +99,6 @@ CKEDITOR.dom.range = function( root ) {
 	/**
 	 * The ancestor DOM element within which the range manipulation are limited.
 	 *
-	 * @readonly
 	 * @property {CKEDITOR.dom.element}
 	 */
 	this.root = isDocRoot ? root.getBody() : root;
