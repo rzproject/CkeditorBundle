@@ -14,9 +14,9 @@
             var rootPath = this.path;
             // Default Config
             var defaultConfig = {
-                theme: 'default',
+                theme: 'rubyblue',
                 matchBrackets: true,
-                lineNumbers: true,
+                lineNumbers: false,
                 lineWrapping: true,
                 autoCloseTags: true,
                 autoCloseBrackets: true,

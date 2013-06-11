@@ -16,7 +16,7 @@
             var defaultConfig = {
                 theme: 'default',
                 matchBrackets: true,
-                lineNumbers: true,
+                lineNumbers: false,
                 lineWrapping: true,
                 autoCloseTags: true,
                 autoCloseBrackets: true,

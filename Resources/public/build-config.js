@@ -96,8 +96,8 @@ var CKBUILDER_CONFIG = {
 		'autogrow' : 1,
 		'codemirror' : 1,
 		'imagebrowser' : 1,
-		'backup' : 1,
-		'youtube' : 1
+		'youtube' : 1,
+		'divarea' : 1
 	},
 	languages : {
 		'en' : 1,
