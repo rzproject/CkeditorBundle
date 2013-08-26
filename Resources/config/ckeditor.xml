@@ -5,7 +5,7 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="rz_ckeditor.ckeditor.type.class">Rz\CkeditorBundle\Form\Type\CKEditorType</parameter>
+        <parameter key="rz_ckeditor.ckeditor.type.class">Rz\CkeditorBundle\Form\Type\CkeditorType</parameter>
         <parameter key="rz_ckeditor.config_manager.class">Rz\CkeditorBundle\Model\ConfigManager</parameter>
     </parameters>
 
