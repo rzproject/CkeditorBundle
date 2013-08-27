@@ -14,8 +14,26 @@
                     instance.destroy(true);
                 }
                 {% set uuid = id %}
-                CKEDITOR.replace("{{ id }}"{% if config is not empty %}, {{ config | json_encode | raw }}{% endif %});
+                CKEDITOR.replace("{{ id }}"{% if config is not empty %}, {{ config | json_encode | raw }}{% endif %})
+                        .on("instanceReady", function (e) {
+                            this.on("focus", function () {
+                                console.log('ck-focus');
+                                for ( instance in CKEDITOR.instances )
+                                    CKEDITOR.instances[instance].updateElement();
+                            });
 
+                            this.on("blur", function () {
+                                console.log('ck-blur');
+                                for ( instance in CKEDITOR.instances )
+                                    CKEDITOR.instances[instance].updateElement();
+                            });
+
+                            this.on( 'change', function() {
+                                console.log('ck-change');
+                                for ( instance in CKEDITOR.instances )
+                                    CKEDITOR.instances[instance].updateElement();
+                            });
+                        });
             </script>
         {% endspaceless %}
 {% endspaceless %}
