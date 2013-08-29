@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.html or http://ckeditor.com/license
  */
 
-KEDITOR.editorConfig = function( config ) {
+CKEDITOR.editorConfig = function( config ) {
     config.imageBrowser_listUrl = Routing.generate('rz_media_service_get_media', {'context': 'default', '_format':'json'}, true) ;
 
     config.codemirror = {
