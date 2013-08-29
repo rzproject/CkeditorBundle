@@ -97,7 +97,8 @@ var CKBUILDER_CONFIG = {
 		'codemirror' : 1,
 		'imagebrowser' : 1,
 		'youtube' : 1,
-		'divarea' : 1
+		'divarea' : 1,
+		'indentlist' : 1
 	},
 	languages : {
 		'en' : 1,
