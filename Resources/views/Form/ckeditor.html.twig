@@ -2,39 +2,41 @@
 {% spaceless %}
         {% form_theme form _self %}
         {% spaceless %}
+        <div class="rz-ckeditor-container">
             <textarea {{ block('widget_attributes') }}>{{ value }}</textarea>
-            {# CkEditor #}
-            <script type="text/javascript">
-                var CKEDITOR_BASEPATH = '{{ asset('bundles/rzckeditor') }}';
-            </script>
-            <script type="text/javascript">
-                var instance = CKEDITOR.instances['{{ id }}'];
+        </div>
+        {# CkEditor #}
+        <script type="text/javascript">
+            var CKEDITOR_BASEPATH = '{{ asset('bundles/rzckeditor') }}';
+        </script>
+        <script type="text/javascript">
+            var instance = CKEDITOR.instances['{{ id }}'];
 
-                if (instance) {
-                    instance.destroy(true);
-                }
-                {% set uuid = id %}
-                CKEDITOR.replace("{{ id }}"{% if config is not empty %}, {{ config | json_encode | raw }}{% endif %})
-                        .on("instanceReady", function (e) {
-                            this.on("focus", function () {
-                                console.log('ck-focus');
-                                for ( instance in CKEDITOR.instances )
-                                    CKEDITOR.instances[instance].updateElement();
-                            });
-
-                            this.on("blur", function () {
-                                console.log('ck-blur');
-                                for ( instance in CKEDITOR.instances )
-                                    CKEDITOR.instances[instance].updateElement();
-                            });
-
-                            this.on( 'change', function() {
-                                console.log('ck-change');
-                                for ( instance in CKEDITOR.instances )
-                                    CKEDITOR.instances[instance].updateElement();
-                            });
+            if (instance) {
+                instance.destroy(true);
+            }
+            {% set uuid = id %}
+            CKEDITOR.replace("{{ id }}"{% if config is not empty %}, {{ config | json_encode | raw }}{% endif %})
+                    .on("instanceReady", function (e) {
+                        this.on("focus", function () {
+                            console.log('ck-focus');
+                            for ( instance in CKEDITOR.instances )
+                                CKEDITOR.instances[instance].updateElement();
                         });
-            </script>
+
+                        this.on("blur", function () {
+                            console.log('ck-blur');
+                            for ( instance in CKEDITOR.instances )
+                                CKEDITOR.instances[instance].updateElement();
+                        });
+
+                        this.on( 'change', function() {
+                            console.log('ck-change');
+                            for ( instance in CKEDITOR.instances )
+                                CKEDITOR.instances[instance].updateElement();
+                        });
+                    });
+        </script>
         {% endspaceless %}
 {% endspaceless %}
 {% endblock rz_ckeditor_widget %}
